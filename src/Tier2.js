@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getReducedColor } from './randomColorGenerator.js'
 import Tier3 from './Tier3'
+import NewChild from './NewChild.js'
 
 
 export default class Tier2 extends Component {
