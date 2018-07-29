@@ -26,7 +26,7 @@ export default class Tier1 extends Component {
   render() {
     const {color, childColor} = this.state
     return (
-      <div onClick={this. className="tier1" style={{backgroundColor: color, color: color}}>
+      <div onClick={this.handleClick className="tier1" style={{backgroundColor: color, color: color}}>
         <Tier2 color={childColor} handleChildClick={newChildColor.bind(this)} />
         <Tier2 color={"#0FF"} />
       </div>
