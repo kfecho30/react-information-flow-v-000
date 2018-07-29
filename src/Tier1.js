@@ -24,8 +24,7 @@ export default class Tier1 extends Component {
   }
 
   render() {
-    // hard coded color values have been added below, though they won't be
-    // present in our solution. What should they be replaced with?
+    const {color, childColor} = this.state
     return (
       <div onClick={(this.handleClick) => {this.setState({color: "#000"})}} className="tier1" style={{backgroundColor: this.state.color, color: this.state.color}}>
         <Tier2 color={childColor} handleChildClick={newChildColor.bind(this)} />
