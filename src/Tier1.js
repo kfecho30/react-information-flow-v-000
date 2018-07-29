@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { getRandomColor, getReducedColor } from './randomColorGenerator.js'
 import Tier2 from './Tier2'
-
+import NewChild from './NewChild.js'
 
 export default class Tier1 extends Component {
 
@@ -27,8 +27,8 @@ export default class Tier1 extends Component {
     const {color, childColor} = this.state
     return (
       <div onClick={this.handleClick} className="tier1" style={{backgroundColor: color, color: color}}>
-        <Tier2 color={childColor} handleChildClick={newChildColor.bind(this)} />
-        <Tier2 color={"#0FF"} />
+        <Tier2 color={childColor} handleChildClick={newChild.bind(this)} />
+        <Tier2 color={childColor} handleChildClick={newChild.bind(this)} />
       </div>
     )
   }
